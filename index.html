@@ -8,42 +8,46 @@
   </head>
   <body>
     <header>
-        <nav>
-            <div class="logo">
+        <nav class="flex justify-between items-center p-4 bg-indigo-900 text-white">
+            <div class="logo flex gap-1">
                 <a href="#" class="sign-logo">
                     <span class="fa-solid fa-puzzle-piece"></span>
                 </a>
                 <a href="#">Fundora</a>
             </div>
-            <ul>
+            <ul class="flex gap-4">
                 <li><a href="">Home</a></li>
                 <li><a href="">Rules</a></li>
                 <li><a href="">Tournament</a></li>
                 <li><a href="">Affiliate</a></li>
                 <li><a href="">FAQ</a></li>
             </ul>
-            <div class="">
-            <a href="">
-                <select name="" id="">
-                    <option value="en">EN</option>
-                </select>
-            </a>
+            <div class="flex justify-center items-center gap-4">
+            
+            <select class="border rounded px-2 py-2" name="" id="">
+                <option  value="en">EN</option>
+            </select>
+            
             <a href="#">Login</a>
             </div>
         </nav>
     </header>
-    <span>Prop treading world wide </span>
-    <h1 class="text-3xl font-bold underline">
-     The Way to Trade
-    </h1>
-    <p>Instant execution, and support for those who break barrier</p>
-    <div class="cta">
-        <button type="submit">
-            <a href="#">Start treading</a>
-        </button>
-        <button type="submit">
-            <a href="#">Join our community</a>
-        </button>
-    </div>
+    <main class="bg-indigo-100 h-screen flex justify-center items-center">
+        <div class="grid place-items-center gap-5">
+            <span>Prop treading world wide </span>
+            <h1 class="text-5xl font-bold text-indigo-900">
+             The Way to Trade
+            </h1>
+            <p>Instant execution, and support for those who break barrier</p>
+            <div class="flex gap-4 mt-10 justify-center">
+                <button class="px-4 py-2 rounded border" type="submit">
+                    <a href="#">Start treading</a>
+                </button>
+                <button class="px-4 py-2 rounded border" type="submit">
+                    <a href="#">Join our community</a>
+                </button>
+        </div>
+        </div>
+    </main>
   </body>
 </html>
