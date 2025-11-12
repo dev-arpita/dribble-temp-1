@@ -6,8 +6,8 @@
     <script src="https://kit.fontawesome.com/f4c08ca399.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body>
-    <header>
+  <body class="font-sans h-screen">
+    <header class="">
         <nav class="flex justify-between items-center p-4 bg-indigo-900 text-white">
             <div class="logo flex gap-1">
                 <a href="#" class="sign-logo">
@@ -15,7 +15,8 @@
                 </a>
                 <a href="#">Fundora</a>
             </div>
-            <ul class="flex gap-4">
+            <div class="sm:block md:hidden">Menu</div>
+            <ul class="flex gap-4 flex-col hidden md:block">
                 <li><a href="">Home</a></li>
                 <li><a href="">Rules</a></li>
                 <li><a href="">Tournament</a></li>
@@ -25,25 +26,27 @@
             <div class="flex justify-center items-center gap-4">
             
             <select class="border rounded px-2 py-2" name="" id="">
+                <option  value="en">Language</option>
                 <option  value="en">EN</option>
+                <option  value="en">HN</option>
             </select>
             
-            <a href="#">Login</a>
+            <a href="#" class="rounded bg-orange-50 text-indigo-950 px-3 py-1 font-medium">Login</a>
             </div>
         </nav>
     </header>
     <main class="bg-indigo-100 h-screen flex justify-center items-center">
         <div class="grid place-items-center gap-5">
-            <span>Prop treading world wide </span>
-            <h1 class="text-5xl font-bold text-indigo-900">
+            <span class="font">Prop treading world wide </span>
+            <h1 class="md:text-7xl text-5xl font-bold text-indigo-900">
              The Way to Trade
             </h1>
-            <p>Instant execution, and support for those who break barrier</p>
+            <p class="text-lg md:text-xl">Instant execution, and support for those who break barrier</p>
             <div class="flex gap-4 mt-10 justify-center">
-                <button class="px-4 py-2 rounded border" type="submit">
+                <button class="px-6 py-2 bg-indigo-900 text-white font-semibold rounded" type="submit">
                     <a href="#">Start treading</a>
                 </button>
-                <button class="px-4 py-2 rounded border" type="submit">
+                <button class="px-4 py-2 font-semibold text-slate-900 rounded border" type="submit">
                     <a href="#">Join our community</a>
                 </button>
         </div>
