@@ -15,23 +15,25 @@
                 </a>
                 <a href="#">Fundora</a>
             </div>
-            <div class="sm:block md:hidden">Menu</div>
-            <ul class="flex gap-4 flex-col hidden md:block">
-                <li><a href="">Home</a></li>
-                <li><a href="">Rules</a></li>
-                <li><a href="">Tournament</a></li>
-                <li><a href="">Affiliate</a></li>
-                <li><a href="">FAQ</a></li>
+            <div class="text-6xl md:hidden cursor-pointer pl-4 pb-4">
+              <span class="fa-solid fa-bars text-xl"></span>
+            </div>
+            <ul class ="md:flex gap-4 hidden ">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Rules</a></li>
+                <li><a href="#">Tournament</a></li>
+                <li><a href="#">Affiliate</a></li>
+                <li><a href="#">FAQ</a></li>
             </ul>
             <div class="flex justify-center items-center gap-4">
             
-            <select class="border rounded px-2 py-2" name="" id="">
-                <option  value="en">Language</option>
-                <option  value="en">EN</option>
-                <option  value="en">HN</option>
-            </select>
-            
-            <a href="#" class="rounded bg-orange-50 text-indigo-950 px-3 py-1 font-medium">Login</a>
+                <select class="border rounded px-2 py-2" name="" id="">
+                    <option  value="en">Language</option>
+                    <option  value="en">EN</option>
+                    <option  value="en">HN</option>
+                </select>
+                
+                <a href="#" class="rounded bg-orange-50 text-indigo-950 px-3 py-1 font-medium">Login</a>
             </div>
         </nav>
     </header>
@@ -51,6 +53,9 @@
                 </button>
         </div>
         </div>
+        <script>
+            document.getElementById("dropdown").classList.toggle("hidden");
+        </script>
     </main>
   </body>
 </html>
