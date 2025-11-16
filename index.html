@@ -1,24 +1,46 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lora:ital,wght@0,400..700;1,400..700&family=Rubik+80s+Fade&family=Sevillana&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f4c08ca399.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  </head>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> 
+    <style>
+    @layer base {
+      .font-logo {
+        font-family: "Rubik 80s Fade", cursive;
+      }
+        .font-paragraph {
+            
+            font-family: "DM Sans", sans-serif;
+        }
+        .font-paragraph-bold {
+            font-family:"Lora", serif;
+            font-weight: 700;
+        }
+    }
+  </style>
+    <title>Fundora</title>
+</head>
   <body class="font-sans h-screen">
     <header class="">
         <nav class="flex justify-between items-center p-4 bg-indigo-900 text-white">
-            <div class="logo flex gap-1">
+            <div class="logo flex gap-1 items-center">
                 <a href="#" class="sign-logo">
                     <span class="fa-solid fa-puzzle-piece"></span>
                 </a>
-                <a href="#">Fundora</a>
+                <a href="#" class="font-logo text-xl">Fundora</a>
             </div>
-            <div class="text-6xl md:hidden cursor-pointer pl-4 pb-4">
-              <span class="fa-solid fa-bars text-xl"></span>
+            <div class=" md:hidden cursor-pointer pl-2.5 pr-2.5 pt-2 rounded-full p-1 border border-white" onclick="document.getElementById('dropdown').classList.toggle('hidden')">
+                <!-- menu-icon -->
+              <span class="fa-solid fa-bars text-xl "></span>
             </div>
-            <ul class ="md:flex gap-4 hidden ">
+            <ul class ="md:flex gap-4 hidden">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Rules</a></li>
                 <li><a href="#">Tournament</a></li>
@@ -27,24 +49,24 @@
             </ul>
             <div class="flex justify-center items-center gap-4">
             
-                <select class="border rounded px-2 py-2" name="" id="">
+                <select class="border rounded text-xs sm:text-sm md:text-base px-2 py-2" name="lang" id="lang">
                     <option  value="en">Language</option>
                     <option  value="en">EN</option>
                     <option  value="en">HN</option>
                 </select>
                 
-                <a href="#" class="rounded bg-orange-50 text-indigo-950 px-3 py-1 font-medium">Login</a>
+                <a href="#" class="rounded bg-orange-50 text-indigo-950 px-3 py-1 font-medium font-sans">Login</a>
             </div>
         </nav>
     </header>
-    <main class="bg-indigo-100 h-screen flex justify-center items-center">
+    <main class="bg-indigo-100 h-[90%] flex justify-center items-center">
         <div class="grid place-items-center gap-5">
-            <span class="font">Prop treading world wide </span>
-            <h1 class="md:text-7xl text-5xl font-bold text-indigo-900">
+            <span class="font-paragraph text-xl">Prop treading world wide </span>
+            <h1 class="md:text-7xl text-5xl font-bold text-indigo-900 font-paragraph-bold">
              The Way to Trade
             </h1>
-            <p class="text-lg md:text-xl">Instant execution, and support for those who break barrier</p>
-            <div class="flex gap-4 mt-10 justify-center">
+            <p class="text-lg md:text-xl px-4 text-center font-paragraph">Instant execution, and support for those who break barrier</p>
+            <div class="flex gap-4 mt-10 flex-wrap justify-center">
                 <button class="px-6 py-2 bg-indigo-900 text-white font-semibold rounded" type="submit">
                     <a href="#">Start treading</a>
                 </button>
